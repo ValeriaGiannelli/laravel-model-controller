@@ -16,7 +16,7 @@
             @endif
             <h5 class="card-title">Nazionalità: {{$movie->nationality}}</h5>
             <h5 class="card-title">Voto: {{$movie->vote}} /10</h5>
-            <h5>Data di creazione: {{$movie->date}}</h5>
+            <h5>Anno: {{ $movie->date->format('d-m-Y')}}</h5>
         </div>
     </div>
 
